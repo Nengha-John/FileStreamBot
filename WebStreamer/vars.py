@@ -7,16 +7,16 @@ load_dotenv()
 
 
 class Var(object):
-    API_ID = int(getenv('API_ID'))
-    API_HASH = str(getenv('API_HASH'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN'))
+    API_ID = int(getenv('API_ID',7275286))
+    API_HASH = str(getenv('API_HASH',))
+    BOT_TOKEN = str(getenv('BOT_TOKEN','8dfef6d9d84e3eac406882f5e4ee4ad4'))
     SESSION_NAME = str(getenv('SESSION_NAME', 'F2LxBot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL','-555063893'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
-    OWNER_ID = int(getenv('OWNER_ID', '1445283714'))
+    OWNER_ID = int(getenv('OWNER_ID', '759555310'))
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
     if 'DYNO' in environ:
